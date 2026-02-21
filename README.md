@@ -88,48 +88,5 @@ npm run server
 ```sh
 npm run test
 ```
-
-### Create feature branch
-#### Implement Global State with `useContext`
-- Create `TaskProvider` as global state within `TaskContext.jsx`
-- Replace tasks state in app with context
-- Update `App` within `main.jsx` to be wrapped in `TaskProvider`
-
-#### Mark Task
-- Implement `toggleComplete` function within `TaskContext.jsx`
-- Ensure `toggleComplete` function edits both the `db.json` and page
-- Call `toggleComplete` upon clicking task button
-
-#### Submit Tasks
-- Apply `useId` on form input
-- Implement `addTask` function within `TaskContext.jsx`
-- Call `addTask` within submit
-
-#### Implement Search Functionality
-- Implement `useRef` on search input
-- Implement filter task context on `TaskList`
-
-### Push feature branch and open a PR on GitHub
-- Merge to main
-
-## Task 4: Document and Maintain
-### Best Practice documentation steps:
-- Add comments to code to explain purpose and logic
-- Clarify intent/functionality of code to other developers
-- Add screenshot of completed work included in Markdown in `README.md`
-- Update `README.md` text to reflect the functionality of the application following [Make a README](https://makeareadme.com)
-- Delete any stale branches on GitHub
-- Remove unnecessary/commented-out code
-- If needed, update `.gitignore` to remove sensitive data
-
-## Submission
-Once all tests are passing and working code is pushed to the GitHub main branch, submit your GitHub repo through Canvas using CodeGrade.
-
-## Grading Criteria
-The application passes all test suites.
-
-Ensure the application:
-- Loads tasks with context.
-- Submits new task with `useId`
-- Marks tasks as complete.
-- Filters tasks shown on the page by a search input.
+## Screenshot
+![Task Manager Screenshot](screenshot/Screenshot(13).png)
